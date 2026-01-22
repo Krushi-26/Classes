@@ -1,0 +1,21 @@
+Day 2
+Hadoop /Spark  Usually traditional system runs on single machine that’s the reason y we -CPU,Ram,Disk I/o use big data  we have two major architectures - hadoop,Spark  Hadoop -  It breaks big data into small pieces  keeps pieces in many computers  works slowly but safely name nodes- they are like map  do not touch anything just remembers like a map  Data nodes - they store and do the the work  -reads from name nodes do the work and put them back in name nodes   Map reduce -reads  then works, then put back  reads again ,works again and repeats that  its a very long process and it very slow  It is not good when it comes to fraud detection, live payments something like where it has to trigger every time   Spark - It is a very fast  it reads the data , keep the memory and works fast then give the result    divers program cluster manager Executors DAG  SO for all this we use cloud platforms AWS,Azure,GCP Spark lives inside them   Data Governance - its used mostly for like private things like SSN, Aadhar ,bank details  so that’s how we can hide numbers , lock files gives keys only to trusted people   After all this we map for that we use -power BI , Tableau  Hadoop Architecture  User—Namenode[metadata]—datanodes[HDFS Storage]—MapReduce[Disk Processing]-output Spark Architecture Client—Driver[DAG Creation]—Cluster Manager[YARN/KBs]—Executors[inmemory processing]-output   Day-3 There are different types of data  structured -rows,columns semi-Structured- JSON,XML unstructured - images, videos,PDFS,Text files  STRUCTURED DaTA  DATABASE-  It is  collection of related structured data where it is stored in rows and tables Databases live on a server and they can be interacted by using DBMS SQL- it creates tables, insert the data ,read the data ,update the data,delete the data  there are different types of SQL command  DDL-Data Definition Language it is use to define the structure  Create,ALter,DROP,Truncate,Rename  DML - Data Manipulation Language Used to change data INSERT,UPDAT,DELETE
+ DQL-Data Query Language
+Used to read data
+SELECT (only command)
+ DCL- Data Control Language
+Used for permissions
+GRANT,REVOKE
+ TCL-Transaction Control Language
+Used for transactions
+COMMIT,ROLLBACK,SAVEPOINT   Schema it is used where it defines how data is stored tables are Schemas-columns are data type and rows are Actual data 
+NOT NULL- Value cannot be empty  
+UNIQUE-No duplicate values         
+PRIMARY KEY-Unique + Not Null 
+FOREIGN KEY Links two tables            
+CHECK Condition e.g., age ≥ 18
+DEFAULT-Auto value if none provided  
+Parent table is like the primary key  Child table is like foreign key  we cannot delete a parent row if the child row still exists when changes are made it automatically changes in the child table as well 
+DELETE-Removes specific rows with WHERE
+TRUNCATE-Removes all data, keeps table   
+DROP- Deletes table/database completely (it deletes everything permanently )  
