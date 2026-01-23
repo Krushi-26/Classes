@@ -1,0 +1,15 @@
+First, we use DDL and DML to create tables, apply constraints, and load data.
+Once data is ready, we use DQL to read and analyze data.
+
+To improve performance, we select only required columns instead of *. 
+WHERE is used to filter rows based on conditions.
+
+LIKE is used when we don’t know the exact value  % for pattern matching -start, end, contain
+
+DISTINCT removes duplicate values
+
+COUNT tells us how many records or unique values exist
+
+ORDER BY sorts data (ASC / DESC)
+
+LIMIT restricts the number of rows returned
